@@ -5,7 +5,7 @@ class App extends Component {
   componentDidMount() {
     fetch(`http://localhost:3001/api/v1/users/`)
     .then(resp => resp.json())
-    .then(console.log)
+    .then(data => console.log(data))
   }
 
   render(){
