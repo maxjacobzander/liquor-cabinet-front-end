@@ -1,8 +1,12 @@
 import React, { Component } from 'react';
-import logo from './logo.svg';
-import './App.css';
 
 class App extends Component {
+
+  componentDidMount() {
+    fetch(`http://localhost:3001/api/v1/users/`)
+    .then(resp => resp.json())
+    .then(console.log)
+  }
 
   render(){
     return (
