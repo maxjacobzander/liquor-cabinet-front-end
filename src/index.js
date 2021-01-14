@@ -6,6 +6,8 @@ import {Provider} from 'react-redux';
 
 import App from './App';
 
+let store = createStore(reducer, applyMiddleware(thunk))
+
 
 ReactDOM.render(
   <Provider>
