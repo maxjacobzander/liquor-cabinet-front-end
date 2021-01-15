@@ -27,3 +27,7 @@ h2 {
     /* filter: drop-shadow(0 0 0.75rem darkblue); */
     position: relative;
 }
+
+.search-form {
+    margin: auto;
+}

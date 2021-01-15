@@ -3,9 +3,7 @@ import ReactDOM from 'react-dom';
 import {createStore, applyMiddleware, compose} from 'redux';
 import thunk from 'redux-thunk';
 import {Provider} from 'react-redux';
-import rootReducer from './reducers/manageUserAndLiquor';
-// import userReducer from './reducers/userReducer';
-
+import rootReducer from './reducers/manageLiquorsAndDrinks'
 import App from './App';
 
 

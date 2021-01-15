@@ -6,7 +6,7 @@ import './index.css';
 class App extends Component {
 
   componentDidMount() {
-    fetch(`http://localhost:3001/api/v1/liquors/1/`)
+    fetch(`http://localhost:3001/api/v1/liquors/`)
     .then(resp => resp.json())
     .then(data => console.log(data))
   }
