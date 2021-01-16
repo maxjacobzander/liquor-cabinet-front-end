@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import Logo from '../images/logoText.png';
-
 class Home extends Component {
     
     render() {
@@ -15,7 +14,6 @@ class Home extends Component {
                         <h3>
                             <label>
                             What's in your cabinet?
-                            <p />
                             <input type="text" name="search" />
                             </label>
                             <p />
@@ -27,5 +25,4 @@ class Home extends Component {
         );
     }
 }
-
 export default Home;

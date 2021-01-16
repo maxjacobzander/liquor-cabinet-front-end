@@ -14,7 +14,7 @@ body {
 h2 {
     font-family: Snell Roundhand, cursive;
     text-align: center;
-    font-size: 2.5em;
+    font-size: 3.5em;
 }
 
 .logo {
@@ -35,9 +35,26 @@ h2 {
 }
 
 input[type=text] {
+    align-items: center;
     width: 50%;
     font-size: larger;
     padding: 12px 20px;
     margin: 8px 0;
     box-sizing: border-box;
-  }
+}
+
+label {
+    font-size: 2em;
+    display: flex;
+    justify-content: center;
+}
+
+input[type=submit] {
+    align-items: center;
+    justify-content: center;
+    width: auto;
+    font-size: larger;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;   
+}
