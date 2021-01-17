@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import {connect} from 'react-redux';
 import Home from './containers/Home';
+import Search from './components/Search';
 import './index.css';
 
 class App extends Component {
@@ -15,6 +16,7 @@ class App extends Component {
     return (
       <div className="App">
         <Home />
+        <Search />
       </div>
     );
   }
