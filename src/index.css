@@ -41,11 +41,11 @@ input[type=text] {
     padding: 12px 20px;
     margin: 8px 0;
     box-sizing: border-box;
+    display: block;
 }
 
 label {
     font-size: 2em;
-    display: flex;
     justify-content: center;
 }
 
@@ -57,4 +57,9 @@ input[type=submit] {
     padding: 12px 20px;
     margin: 8px 0;
     box-sizing: border-box;   
+}
+
+.line-break {
+    padding: 25px;
+    width: 100%;
 }

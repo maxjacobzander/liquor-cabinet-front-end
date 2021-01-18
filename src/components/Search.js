@@ -11,7 +11,6 @@ class Search extends Component {
                         What's in your cabinet?
                         <input type="text" name="search" />
                         </label>
-                        <p />
                         <input type="submit" value="search" />
                     </h3>
                 </form>
