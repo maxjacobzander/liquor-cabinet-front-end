@@ -6,6 +6,14 @@ import './index.css';
 
 class App extends Component {
 
+  // constructor() {
+  //   super();
+
+  //   this.state = {
+
+  //   }
+  // }
+
   componentDidMount() {
     fetch(`http://localhost:3001/api/v1/drinks`)
     .then(resp => resp.json())
