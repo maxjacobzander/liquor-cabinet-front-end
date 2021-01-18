@@ -7,10 +7,10 @@ class NewDrink extends Component {
 
         this.state = {
             name: '',
-            other_ingredients: '',
+            ingredients: '',
             instructions: '',
             rating: '',
-            liquor_id: ''
+            main_liquor: ''
         }
     }
 
