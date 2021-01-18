@@ -17,6 +17,10 @@ h2 {
     font-size: 3.5em;
 }
 
+h3 {
+    font-size: 1.5em;
+}
+
 .logo {
     display: block;
     padding: 5px;
@@ -30,18 +34,20 @@ h2 {
 
 .search-form {
     display: block;
-    margin-left: auto;
-    margin-right: auto;
+    margin: auto;
+    position: relative;
+    text-align: center;
 }
 
 input[type=text] {
     align-items: center;
-    width: 50%;
+    width: 60%;
     font-size: larger;
     padding: 12px 20px;
     margin: 8px 0;
     box-sizing: border-box;
-    display: block;
+    display: flex;
+    justify-content: center;
 }
 
 label {
