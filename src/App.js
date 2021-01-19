@@ -29,7 +29,7 @@ class App extends Component {
       <div className="App">
         <Home />
         <Search />
-        <ShowDrink />
+        {/* <ShowDrink /> */}
         <NewDrink />
       </div>
     );
