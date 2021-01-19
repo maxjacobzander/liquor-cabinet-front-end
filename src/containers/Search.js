@@ -1,16 +1,35 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
+import { fetchDrinks } from '../actions/actions'
 
 class Search extends Component {
+
+    constructor(props) {
+        super(props);
+        this.state = {
+            main_liquor: ''
+        }
+    }
+
+    handleChange = event => {
+		this.setState({
+			main_liquor: event.target.value
+        });
+        debugger
+    };
+
+    handleSubmit = event => {
+        debugger
+    }
     
     render() {
         return (
             <div class="search-form">
-                <form>
+                <form onSubmit={this.handleSubmit}>
                     <h3>
                         <label>
                         What's in your cabinet?
-                        <input type="text" name="search" placeholder="Please Enter A Type Of Liquor (ie. Whiskey, Tequila, etc.)" />
+                        <input type="text" name="search" placeholder="Please Enter A Type Of Liquor (ie. Whiskey, Tequila, etc.)" onChange={this.handleChange} value={this.state.main_liquor}/>
                         </label>
                         <input type="submit" value="search" />
                     </h3>
@@ -20,4 +39,4 @@ class Search extends Component {
     }
 }
 
-export default connect(null)(Search);
+export default connect(null, {fetchDrinks})(Search);
