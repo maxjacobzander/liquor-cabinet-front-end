@@ -49,6 +49,12 @@ input[type=text] {
     box-sizing: border-box;
 }
 
+#new-drink {
+    align-content: center;
+    justify-content: center;
+    position: relative;
+}
+
 label {
     font-size: 2em;
     justify-content: center;

@@ -31,29 +31,29 @@ class NewDrink extends Component {
     render() {
         return (
             <div>
-            <form onSubmit={ this.handleSubmit }>
+            <form id="new-drink" onSubmit={ this.handleSubmit }>
                 <h2>Add A New Drink To Our Database</h2>
                 <div classname="new-drink-input">
                     <label>
-                    Name:
+                    Name: 
                     <input type="text" name="name" id="name" value={ this.state.name } onChange={ this.handleChange } />
                     </label>
                 </div>
                 <div className="new-drink-input">
                     <label>
-                    Main Liquor:
+                    Main Liquor: 
                     <input type="text" name="main_liquor" id="main_liquor" value={ this.state.main_liquor } onChange={ this.handleChange }/>
                     </label>
                 </div>
                 <div className="new-drink-input">
                     <label>
-                    Ingredients (separated by commas):
+                    Ingredients (separated by commas): 
                     <input type="text" name="ingredients" id="ingredients" value={ this.state.ingredients } onChange={ this.handleChange }/>
                     </label>
                 </div>
                 <div className="new-drink-input">
                     <label>
-                    Instructions:
+                    Instructions: 
                     <input type="text" name="instructions" id="instructions" value={ this.state.instructions } onChange={ this.handleChange }/>
                     </label>
                 </div>
