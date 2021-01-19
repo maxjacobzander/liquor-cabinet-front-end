@@ -26,13 +26,12 @@ class NewDrink extends Component {
         event.preventDefault();
         this.props.addDrink( this.state );
         this.props.history.push('/drinks');
-        debugger
     }
 
     render() {
         return (
             <div>
-            <form onSubmit={ this.handSubmit }>
+            <form onSubmit={ this.handleSubmit }>
                 <h2>Add A New Drink To Our Database</h2>
                 <div classname="new-drink-input">
                     <label>
