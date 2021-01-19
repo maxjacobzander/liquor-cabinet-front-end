@@ -74,3 +74,12 @@ input[placeholder] {
     padding: 25px;
     width: 100%;
 }
+
+.nav-container {
+    display: inline;
+    width: 100%;
+    list-style-type: none;
+    text-align: center;
+    position: relative;
+    bottom: 0;
+}

@@ -7,7 +7,7 @@ export class NavBar extends Component {
     return (
       <nav className="nav-bar">
       <Router>
-        <ul className="container">
+        <ul className="nav-container">
           <NavLink to="/">Home</NavLink>
             <li><NavLink to="/drinks/new">Add A Drink</NavLink></li>
             <li><NavLink to="/drinks">View All Drinks</NavLink></li>
