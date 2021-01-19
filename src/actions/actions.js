@@ -2,10 +2,10 @@ export const fetchDrinks = () => {
     return(dispatch) => {
         return fetch(`http://localhost:3001/api/v1/drinks`)
         .then(resp => resp.json())
-        .then(data => console.log)
-        // .then(liquor => {
-        //     dispatch({ type: 'SET_LIQUORS', payload: liquors})
-        // })
+        // .then(data => console.log)
+        .then(drinks => {
+            dispatch({ type: 'SET_DRINK', payload: drinks})
+        })
     }
 }
 
