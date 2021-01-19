@@ -1,6 +1,7 @@
 
 import React from 'react'
-import { Link } from 'react-router-dom';
+import { connect } from 'react-redux';
+import { editDrink } from '../actions/actions'
 
 const DrinkItem = (props) => {
     console.log(props)
@@ -10,9 +11,9 @@ const DrinkItem = (props) => {
       <li>Main Liquor: {props.drink.main_liquor}</li><br />
       <li>Ingredients: {props.drink.ingredients}</li><br />
       <li>Instructions: {props.drink.instructions}</li><br />
-      <Link to={`/drinks/${props.drink.id}`}>View</Link>
+      <button onClick={()=>editDrink(drink.id)}>Edit Drink</button>
     </ul>
     );
 }
 
-export default DrinkItem
+export default connect(null, { editDrink })(DrinkItem)

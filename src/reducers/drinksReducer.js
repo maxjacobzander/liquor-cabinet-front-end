@@ -1,17 +1,11 @@
-let id = 0
-
 export default (state = [], action) => {
-    const newDrink = () => {
-        return {
-            ...action.payload,
-            id: id++
-        }
-    }
     switch(action.type){
+        case "SET_DRINK":
+            return [...action.payload]
         case "ADD_DRINK":
-            return [...state, newDrink()]
-        // case "EDIT_DRINK":
-            //Add EDIT functionality if it feels right
+            return [...state, action.payload]
+        case "EDIT_DRINK":
+            // Add EDIT functionality if it feels right
         default:
             return state
     }

@@ -29,8 +29,8 @@ export const addDrink = drink => {
     // }
 }
 
-// export const editDrink = drinkID => {
-//     return {
-//         type: "EDIT_DRINK", payload: drinkID
-//     }
-// }
+export const editDrink = drinkID => {
+    return {
+        type: "EDIT_DRINK", payload: drinkID
+    }
+}
