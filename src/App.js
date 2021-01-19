@@ -35,7 +35,7 @@ class App extends Component {
         <div className="container">
           <Switch>
             <Route exact path="/" component={Home} />
-            <Route exact path="/drinks/new" render= {props => <NewDrink {...props} addDrink={this.addDrink} /> } />
+            <Route exact path="/drinks/new" component={NewDrink} />
             <Route exact path="/drinks" component={Drinks} />
           </Switch>
         </div>

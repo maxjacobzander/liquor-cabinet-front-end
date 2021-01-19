@@ -67,4 +67,10 @@ class NewDrink extends Component {
     }
 }
 
-export default connect(null, {addDrink})(NewDrink);
+// const mapDispatchToProps = dispatch => {
+//     return {
+//         addDrink: drink => dispatch(addDrink(drink))
+//     }
+// }
+
+export default connect(null, { addDrink })(NewDrink);
