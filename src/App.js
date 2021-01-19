@@ -3,7 +3,7 @@ import {connect} from 'react-redux';
 import Home from './containers/Home';
 import Search from './components/Search';
 import NewDrink from './containers/NewDrink';
-import Drinks from './containers/Drinks';
+import ShowDrink from './containers/ShowDrink';
 import './index.css';
 
 class App extends Component {
@@ -27,7 +27,7 @@ class App extends Component {
       <div className="App">
         <Home />
         <Search />
-        <Drinks />
+        <ShowDrink />
         <NewDrink />
       </div>
     );

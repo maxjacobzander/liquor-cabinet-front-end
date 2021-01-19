@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import DrinkItem from '../components/DrinkItem';
 
-export class drinks extends Component {
+export class Drinks extends Component {
     render() {
         const drinks = this.props.drink.map(( drink, i ) => <DrinkItem key={i} main_liquor ={ drink.main_liquor } />)
         return (
@@ -19,4 +19,4 @@ DrinkItem.defaultProps = {
     drinks: []
 }
 
-export default drinks;
+export default Drinks;
