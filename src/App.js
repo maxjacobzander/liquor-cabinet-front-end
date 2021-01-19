@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import {connect} from 'react-redux';
 import Home from './containers/Home';
-import Search from './components/Search';
+import Search from './containers/Search';
 // import NewDrink from './containers/NewDrink';
 // import ShowDrink from './containers/ShowDrink';
 // import Drinks from './containers/Drinks';

@@ -65,6 +65,11 @@ input[type=submit] {
     box-sizing: border-box;   
 }
 
+input[placeholder] {
+    font-style: italic;
+    font-size: large;
+}
+
 .line-break {
     padding: 25px;
     width: 100%;

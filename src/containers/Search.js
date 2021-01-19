@@ -10,7 +10,7 @@ class Search extends Component {
                     <h3>
                         <label>
                         What's in your cabinet?
-                        <input type="text" name="search" />
+                        <input type="text" name="search" placeholder="Please Enter A Type Of Liquor (ie. Whiskey, Tequila, etc.)" />
                         </label>
                         <input type="submit" value="search" />
                     </h3>
