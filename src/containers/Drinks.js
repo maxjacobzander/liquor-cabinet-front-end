@@ -1,13 +1,14 @@
 import React, { Component } from 'react';
 import DrinkItem from '../components/DrinkItem';
+import { connect } from 'react-redux';
 
 export class Drinks extends Component {
     render() {
-        const drinks = this.props.drink.map(( drink, i ) => <DrinkItem key={i} main_liquor ={ drink.main_liquor } />)
+        const drinks = this.props.drinks.map(( drink, i ) => <DrinkItem key={i} main_liquor ={ drink.main_liquor } />)
         return (
             <div>
                 <h3>Drinks</h3>
-                <ul classname="LiquorCollection">
+                <ul classname="DrinkCollection">
                     { drinks }
                 </ul>
             </div>
@@ -15,8 +16,10 @@ export class Drinks extends Component {
     }
 }
 
-DrinkItem.defaultProps = {
-    drinks: []
+const mapStateToProps = state => {
+    return {
+        drinks: state.drinks
+    }
 }
 
-export default Drinks;
+export default connect(mapStateToProps)(Drinks);

@@ -15,10 +15,10 @@ class App extends Component {
   constructor() {
     super();
 
-    this.state = {
-      id: 0,
-        drinks: []
-    }
+    // this.state = {
+    //   id: 0,
+    //     drinks: []
+    // }
   }
 
   // componentDidMount() {
