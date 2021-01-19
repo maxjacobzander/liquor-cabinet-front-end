@@ -17,7 +17,7 @@ export const addDrink = drink => {
             headers: {
                 'Content-Type': 'application/json'
             },
-            body: JSON.stringify({pet:pet})
+            body: JSON.stringify({drink:drink})
         })
         .then(resp => resp.json())
         .then(drink => {

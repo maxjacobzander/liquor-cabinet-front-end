@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { addDrink } from '../actions/index'
+import { addDrink } from '../actions/actions'
 import { connect } from 'react-redux'
 
 class NewDrink extends Component {
@@ -26,6 +26,7 @@ class NewDrink extends Component {
         event.preventDefault();
         this.props.addDrink( this.state );
         this.props.history.push('/drinks');
+        debugger
     }
 
     render() {
