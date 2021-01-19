@@ -41,13 +41,12 @@ h3 {
 
 input[type=text] {
     align-items: center;
+    justify-content: center;
     width: 60%;
     font-size: large;
     padding: 12px 20px;
     margin: 8px 0;
     box-sizing: border-box;
-    display: flex;
-    justify-content: center;
 }
 
 label {
@@ -59,7 +58,7 @@ input[type=submit] {
     align-items: center;
     justify-content: center;
     width: auto;
-    font-size: larger;
+    font-size: large;
     padding: 12px 20px;
     margin: 8px 0;
     box-sizing: border-box;   
