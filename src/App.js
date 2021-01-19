@@ -1,5 +1,7 @@
 import React, { Component } from 'react';
 import {connect} from 'react-redux';
+import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
+import { NavBar } from './components/NavBar';
 import Home from './containers/Home';
 import Search from './containers/Search';
 // import NewDrink from './containers/NewDrink';
@@ -27,12 +29,20 @@ class App extends Component {
 
   render(){
     return (
+      // <Router>
+      //   <div className="container">
+      //     <Switch>
+
+      //     </Switch>
+      //   </div>
+      // </Router>
       <div className="App">
         <Home />
         <Search />
         {/* <Drinks /> */}
         {/* <ShowDrink /> */}
         {/* <NewDrink /> */}
+        <NavBar />
       </div>
     );
   }
