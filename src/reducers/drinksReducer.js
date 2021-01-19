@@ -9,7 +9,7 @@ export default (state = [{name: "Manhattan", main_liquor: "Whiskey", ingredients
     }
     switch(action.type){
         case "ADD_DRINK":
-            return [...state, newDrink]
+            return [...state, newDrink()]
         // case "EDIT_DRINK":
             //Add EDIT functionality if it feels right
         default:
