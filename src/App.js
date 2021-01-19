@@ -4,17 +4,19 @@ import Home from './containers/Home';
 import Search from './components/Search';
 import NewDrink from './containers/NewDrink';
 import ShowDrink from './containers/ShowDrink';
+import drinksReducer from './reducers/drinksReducer';
 import './index.css';
 
 class App extends Component {
 
-  // constructor() {
-  //   super();
+  constructor() {
+    super();
 
-  //   this.state = {
-
-  //   }
-  // }
+    this.state = {
+      id: 0,
+        drinks: []
+    }
+  }
 
   componentDidMount() {
     fetch(`http://localhost:3001/api/v1/drinks`)
