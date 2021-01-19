@@ -67,6 +67,7 @@ input[type=submit] {
 input[placeholder] {
     font-style: italic;
     font-size: large;
+    text-align: center;
 }
 
 .line-break {
