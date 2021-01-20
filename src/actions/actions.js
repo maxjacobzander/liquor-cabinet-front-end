@@ -27,7 +27,17 @@ export const addDrink = drink => {
 }
 
 export const editDrink = drinkID => {
-    return {
-        type: "EDIT_DRINK", payload: drinkID
+    return(dispatch) => {
+        return fetch(`http://localhost:3001/api/v1/drinks/${drinkID}`, {
+            method: 'PATCH',
+            headers: {
+                'Content-Type': 'application/json'
+            },
+            // body: JSON.stringify({drink:drink})
+        })
+        .then(resp => resp.json())
+        .then(drink => {
+            dispatch({ type: "EDIT_DRINK", payload: drink.id })
+        })
     }
 }
