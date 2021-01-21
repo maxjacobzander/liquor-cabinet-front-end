@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import { addDrink } from '../actions/actions'
 import { connect } from 'react-redux'
+import { withRouter } from 'react-router-dom'
 
 class NewDrink extends Component {
 
@@ -72,4 +73,4 @@ class NewDrink extends Component {
 //     }
 // }
 
-export default connect(null, { addDrink })(NewDrink);
+export default withRouter(connect(null, { addDrink })(NewDrink));

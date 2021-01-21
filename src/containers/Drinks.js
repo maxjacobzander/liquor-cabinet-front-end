@@ -12,7 +12,7 @@ export class Drinks extends Component {
         const drinks = this.props.drinks.map(( drink, i ) => <DrinkItem key={i} drink={drink} />)
         return (
             <div>
-                <h3>Drinks</h3>
+                <h2>Drinks</h2>
                 <ul classname="DrinkCollection">
                     { drinks }
                 </ul>
@@ -20,6 +20,7 @@ export class Drinks extends Component {
         );
     }
 }
+
 
 const mapStateToProps = state => {
     return {

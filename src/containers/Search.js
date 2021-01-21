@@ -15,7 +15,6 @@ class Search extends Component {
 		this.setState({
 			main_liquor: event.target.value
         });
-        debugger
     };
 
     handleSubmit = event => {
