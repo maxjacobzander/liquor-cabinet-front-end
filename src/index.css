@@ -92,4 +92,6 @@ input[placeholder] {
 
 .collection-item {
     border: 2px solid black;
+    padding: 3%;
+    max-width: 25%;
 }

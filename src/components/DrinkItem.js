@@ -12,8 +12,6 @@ const DrinkItem = (props) => {
       <li>Ingredients: {props.drink.ingredients}</li><br />
       <li>Instructions: {props.drink.instructions}</li><br />
       <button onClick={()=>editDrink(props.drink.id)}>Edit Drink</button>
-      <br />
-      <br />
     </ul>
     );
 }
