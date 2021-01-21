@@ -41,3 +41,14 @@ export const editDrink = drinkID => {
         })
     }
 }
+
+export const fetchDrinkForEdit = drinkID => {
+    return(dispatch) => {
+        return fetch(`http://localhost:3001/api/v1/drinks/${drinkID}`)
+        .then(resp => resp.json())
+        .then(data => console.log)
+        // .then(drinks => {
+        //     dispatch({ type: 'SET_DRINK', payload: drinks})
+        // })
+    }
+}

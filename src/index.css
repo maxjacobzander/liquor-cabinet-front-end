@@ -89,3 +89,7 @@ input[placeholder] {
     position: relative;
     bottom: 0;
 }
+
+.collection-item {
+    border: 2px solid black;
+}
