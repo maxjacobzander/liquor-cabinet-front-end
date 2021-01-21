@@ -52,3 +52,19 @@ export const fetchDrinkForEdit = drinkID => {
         // })
     }
 }
+
+export const searchDrinks = liquor => {
+    return(dispatch) => {
+        return fetch('http://localhost:3001/api/v1/search', {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json'
+            },
+            body: JSON.stringify({liquor})
+        })
+        .then(resp => resp.json())
+        .then(liquor => {
+            dispatch({ type: "FIND_DRINK", payload: liquor })
+        })
+    }
+}

@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
 import { fetchDrinks } from '../actions/actions'
+import { searchDrinks } from '../actions/actions'
 
 class Search extends Component {
 
@@ -13,14 +14,16 @@ class Search extends Component {
 
     handleChange = event => {
 		this.setState({
-			main_liquor: event.target.value
+            main_liquor: event.target.value
         });
     };
 
     handleSubmit = event => {
-        debugger
+        this.props.searchDrinks(this.state)
     }
     
+    
+
     render() {
         return (
             <div class="search-form">
@@ -38,4 +41,4 @@ class Search extends Component {
     }
 }
 
-export default connect(null, {fetchDrinks})(Search);
+export default connect(null, {fetchDrinks, searchDrinks})(Search);
