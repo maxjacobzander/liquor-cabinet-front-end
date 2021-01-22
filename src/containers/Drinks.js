@@ -32,6 +32,7 @@ export class Drinks extends Component {
             <div>
                 <LogoHeader />
                 <h2>Drinks</h2>
+                <h3>View All Drinks Here or Enter A Type of Liquor Below to Search</h3>
                 <input type="text" id="allDrinkSearchBar"
                     placeholder="Please Enter A Type Of Liquor (ie. Whiskey, Tequila, etc.)"
                     value={this.state.search}
