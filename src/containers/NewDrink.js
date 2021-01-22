@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import { addDrink } from '../actions/actions'
 import { connect } from 'react-redux'
 import { withRouter } from 'react-router-dom'
+import LogoHeader from '../components/LogoHeader'
 
 class NewDrink extends Component {
 
@@ -32,6 +33,7 @@ class NewDrink extends Component {
     render() {
         return (
             <div>
+            <LogoHeader />
             <form id="new-drink" onSubmit={ this.handleSubmit }>
                 <h2>Add A New Drink To Our Database</h2>
                 <div classname="new-drink-input">
