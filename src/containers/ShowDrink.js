@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import { fetchDrinks } from '../actions/actions'
 
 class ShowDrink extends Component {
     constructor(props) {
