@@ -24,7 +24,7 @@ export class Drinks extends Component {
         // const drinks = this.props.drinks.map(( drink, i ) => <DrinkItem key={i} drink={drink} />)
         let drinks = this.props.drinks.filter(
             (drink) => {
-                return drink.main_liquor.indexOf(this.state.search) !== -1;
+                return drink.ingredients.indexOf(this.state.search) !== -1 || drink.main_liquor.indexOf(this.state.search) !== -1;
             }
         );
         let filteredDrinks = drinks.map(( drink, i ) => <DrinkItem key={i} drink={drink} />)
