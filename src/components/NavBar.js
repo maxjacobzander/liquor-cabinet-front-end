@@ -11,11 +11,11 @@ export class NavBar extends Component {
         <br />
         <nav className="nav-bar">
         <Router>
-          <ul className="nav-container">
-            <NavLink to="/">Home</NavLink>
-              <li><NavLink to="/drinks/new">Add A Drink</NavLink></li>
-              <li><NavLink to="/drinks">View All Drinks</NavLink></li>
-            </ul>
+          <div className="nav-container">
+            <NavLink to="/">Home</NavLink> | 
+             <NavLink to="/drinks/new">Add A Drink</NavLink> |
+             <NavLink to="/drinks">View All Drinks</NavLink>
+            </div>
           </Router>
         </nav>
       </div>
