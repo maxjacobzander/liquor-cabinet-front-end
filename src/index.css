@@ -95,3 +95,10 @@ input[placeholder] {
     padding: 3%;
     max-width: 25%;
 }
+
+#allDrinkSearchBar {
+    display: block;
+    margin: auto;
+    position: relative;
+    text-align: center;
+}

@@ -36,6 +36,7 @@ export class Drinks extends Component {
                     placeholder="Please Enter A Type Of Liquor (ie. Whiskey, Tequila, etc.)"
                     value={this.state.search}
                     onChange={this.updateSearch.bind(this)} />
+                <br /> <br />
                 <ul classname="DrinkCollection">
                     { filteredDrinks }
                 </ul>
