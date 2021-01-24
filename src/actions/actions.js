@@ -55,7 +55,7 @@ export const fetchDrinkForEdit = drinkID => {
 
 export const searchDrinks = liquor => {
     return(dispatch) => {
-        return fetch(`http://localhost:3001/api/v1/search?q=whiskey`, {
+        return fetch(`http://localhost:3001/api/v1/search?q=${this.state}`, {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json'
@@ -65,7 +65,7 @@ export const searchDrinks = liquor => {
         .then(resp => resp.json())
         .then(liquor => {
             console.log("liquor", liquor)
-            // dispatch({ type: "FIND_DRINK", payload: liquor })
+            dispatch({ type: "FIND_DRINK", payload: liquor })
         })
     }
 }
