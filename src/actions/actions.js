@@ -64,7 +64,8 @@ export const searchDrinks = liquor => {
         })
         .then(resp => resp.json())
         .then(liquor => {
-            dispatch({ type: "FIND_DRINK", payload: liquor })
+            console.log("liquor", liquor)
+            // dispatch({ type: "FIND_DRINK", payload: liquor })
         })
     }
 }

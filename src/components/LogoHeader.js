@@ -5,7 +5,7 @@ class LogoHeader extends Component {
     render() {
         return (
             <div>
-               <img class="logo" src={Logo} alt="The Liquor Cabinet" /> 
+               <img className="logo" src={Logo} alt="The Liquor Cabinet" /> 
             </div>
         );
     }

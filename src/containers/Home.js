@@ -7,7 +7,7 @@ class Home extends Component {
         return (
             <div>
                 <h2>Welcome to</h2>
-                <img class="logo" src={Logo} alt="The Liquor Cabinet" />
+                <img className="logo" src={Logo} alt="The Liquor Cabinet" />
                 <Search />
             </div>
             

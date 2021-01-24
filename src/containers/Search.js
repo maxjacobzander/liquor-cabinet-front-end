@@ -19,6 +19,7 @@ class Search extends Component {
     };
 
     handleSubmit = event => {
+        event.preventDefault()
         this.props.searchDrinks(this.state)
     }
     
@@ -26,7 +27,7 @@ class Search extends Component {
 
     render() {
         return (
-            <div class="search-form">
+            <div className="search-form">
                 <form onSubmit={this.handleSubmit}>
                     <h3>
                         <label>

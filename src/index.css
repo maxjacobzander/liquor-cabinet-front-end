@@ -54,6 +54,8 @@ input[type=text] {
     align-content: center;
     justify-content: center;
     position: relative;
+    font-size: medium;
+    padding: 15px;
 }
 
 label {
@@ -102,4 +104,8 @@ input[placeholder] {
     margin: auto;
     position: relative;
     text-align: center;
+}
+
+.DrinkCollection {
+    display: flex;
 }
