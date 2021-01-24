@@ -1,5 +1,3 @@
-
-import { render } from '@testing-library/react';
 import React from 'react'
 import { connect } from 'react-redux';
 
@@ -9,7 +7,13 @@ const Results = (props) => {
     }
     return props.drinks.map((drink) => {
       return( <div>
-        <h1> { drink.name } </h1>
+        {/* <h1> { drink.name } </h1> */}
+      <ul className="collection-item">
+        <li>Name: {drink.name}</li><br/>
+        <li>Main Liquor: {drink.main_liquor}</li><br />
+        <li>Ingredients: {drink.ingredients}</li><br />
+        <li>Instructions: {drink.instructions}</li><br />
+        </ul>
       </div> )
     })
 }
