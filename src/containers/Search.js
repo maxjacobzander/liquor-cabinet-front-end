@@ -20,8 +20,7 @@ class Search extends Component {
 
     handleSubmit = event => {
         event.preventDefault()
-        this.props.searchDrinks.bind(this.state)
-        debugger
+        this.props.searchDrinks(this.state);
     }
     
     

@@ -55,7 +55,8 @@ export const fetchDrinkForEdit = drinkID => {
 
 export const searchDrinks = liquor => {
     return(dispatch) => {
-        return fetch(`http://localhost:3001/api/v1/search?q=${this.state}`, {
+        // return fetch(`http://localhost:3001/api/v1/search?q=${this.state}`, {
+        return fetch(`http://localhost:3001/api/v1/search?q=tequila`, {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json'

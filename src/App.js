@@ -5,6 +5,7 @@ import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 import { NavBar } from './components/NavBar';
 import Home from './containers/Home';
 import NewDrink from './containers/NewDrink';
+import Results from './components/Results';
 // import Search from './containers/Search';
 // import NewDrink from './containers/NewDrink';
 // import ShowDrink from './containers/ShowDrink';
@@ -37,9 +38,11 @@ class App extends Component {
             <Route exact path="/" component={Home} />
             <Route exact path="/drinks/new" component={NewDrink} />
             <Route exact path="/drinks" component={Drinks} />
+            {/* <Route exact path="/results" component={Results} /> */}
             {/* <Route path="/drinks/${drinkID}" component={ShowDrink} /> */}
           </Switch>
         </div>
+        <Results />
         <NavBar />
       </Router>
       // <div className="App">
