@@ -109,3 +109,8 @@ input[placeholder] {
 .DrinkCollection {
     display: flex;
 }
+
+.age-verification {
+    font-size: larger;
+    align-content: center;
+}

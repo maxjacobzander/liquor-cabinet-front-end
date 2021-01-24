@@ -10,7 +10,7 @@ export class NavBar extends Component {
         <br />
         <nav className="nav-bar">
           <div className="nav-container">
-            <NavLink to="/" exact>Home</NavLink> | 
+            <NavLink to="/home" exact>Home</NavLink> | 
              <NavLink to="/drinks/new" exact>Add A Drink</NavLink> |
              <NavLink to="/drinks" exact>View All Drinks</NavLink>
             </div>
