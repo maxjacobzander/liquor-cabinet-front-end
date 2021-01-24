@@ -119,6 +119,16 @@ input[placeholder] {
     position: relative;
 }
 
-.age-verification[type=button] {
-    font-size: larger;
+button {
+    font-size: large;
+}
+
+.age-verification {
+        font-family: 'Futura', sans-serif;
+        font-size: large;
+        display: inline-block;
+    }
+
+.invalid {
+    vertical-align: middle
 }
