@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import {connect} from 'react-redux';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 // import NavBar from './components/NavBar';
-import { NavBar } from './components/NavBar';
+// import { NavBar } from './components/NavBar';
 import Home from './containers/Home';
 import NewDrink from './containers/NewDrink';
 import Results from './components/Results';
@@ -47,7 +47,7 @@ class App extends Component {
           </Switch>
         </div>
         <Results />
-        <NavBar />
+        {/* <NavBar /> */}
       </Router>
       // <div className="App">
       //   <Home />

@@ -3,6 +3,7 @@ import DrinkItem from '../components/DrinkItem';
 import { connect } from 'react-redux';
 import { fetchDrinks } from '../actions/actions';
 import LogoHeader from '../components/LogoHeader'
+import NavBar from '../components/NavBar'
 
 export class Drinks extends Component {
     constructor() {
@@ -41,6 +42,7 @@ export class Drinks extends Component {
                 <div classname="DrinkCollection">
                     { filteredDrinks }
                 </div>
+                <NavBar />
             </div>
         );
     }

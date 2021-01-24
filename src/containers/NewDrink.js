@@ -3,6 +3,7 @@ import { addDrink } from '../actions/actions'
 import { connect } from 'react-redux'
 import { withRouter } from 'react-router-dom'
 import LogoHeader from '../components/LogoHeader'
+import NavBar from '../components/NavBar'
 
 class NewDrink extends Component {
 
@@ -63,7 +64,7 @@ class NewDrink extends Component {
 
                     <input type="submit" value="Submit Drink" />
             </form>
-                
+            <NavBar />  
             </div>
         );
     }

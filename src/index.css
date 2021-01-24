@@ -112,5 +112,13 @@ input[placeholder] {
 
 .age-verification {
     font-size: larger;
+    text-align: center;
     align-content: center;
+    margin: auto;
+    display: block;
+    position: relative;
+}
+
+.age-verification[type=button] {
+    font-size: larger;
 }
