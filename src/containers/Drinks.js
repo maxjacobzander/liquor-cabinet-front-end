@@ -4,7 +4,6 @@ import { connect } from 'react-redux';
 import { fetchDrinks } from '../actions/actions';
 import LogoHeader from '../components/LogoHeader'
 import NavBar from '../components/NavBar'
-import Row from 'react-bootstrap/Row'
 
 export class Drinks extends Component {
     constructor() {
@@ -23,7 +22,6 @@ export class Drinks extends Component {
     }
 
     render() {
-        // const drinks = this.props.drinks.map(( drink, i ) => <DrinkItem key={i} drink={drink} />)
         const drinks = this.props.drinks.filter(
             (drink) => {
                 return drink.ingredients.toLowerCase().indexOf(this.state.search) !== -1 || drink.main_liquor.indexOf(this.state.search) !== -1;

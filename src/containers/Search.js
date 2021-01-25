@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
-import { fetchDrinks } from '../actions/actions'
 import { searchDrinks } from '../actions/actions'
 
 class Search extends Component {
@@ -20,7 +19,6 @@ class Search extends Component {
 
     handleSubmit = event => {
         event.preventDefault()
-        // debugger
         this.props.searchDrinks(this.state.main_liquor);
     }
     
@@ -43,4 +41,4 @@ class Search extends Component {
     }
 }
 
-export default connect(null, {fetchDrinks, searchDrinks})(Search);
+export default connect(null, {searchDrinks})(Search);
