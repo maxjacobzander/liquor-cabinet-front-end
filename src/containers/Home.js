@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import NavBar from '../components/NavBar';
 import Logo from '../images/logoText.png';
 import Search from './Search';
+import Results from '../components/Results';
 class Home extends Component {
     
     render() {
@@ -11,6 +12,7 @@ class Home extends Component {
                 <img className="logo" src={Logo} alt="The Liquor Cabinet" />
                 <Search />
                 <NavBar />
+                <Results />
             </div>
             
         );

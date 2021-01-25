@@ -35,7 +35,7 @@ class EditDrink extends Component {
     handleSubmit = event => {
         preventDefault()
         this.props.addDrink( this.state );
-        this.props.history.push('/drinks');
+        // this.props.history.push('/drinks');
     }
 
     render() {

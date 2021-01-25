@@ -32,7 +32,6 @@ class App extends Component {
             <Route exact path="/invalid" component={Invalid} />
           </Switch>
         </div>
-        <Results />
       </Router>
     );
   }
