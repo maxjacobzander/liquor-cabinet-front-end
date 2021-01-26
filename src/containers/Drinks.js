@@ -38,7 +38,7 @@ export class Drinks extends Component {
                     value={this.state.search}
                     onChange={this.updateSearch.bind(this)} />
                 <br /> <br />
-                <div classname="DrinkCollection">
+                <div className="drink-wrapper">
                         { filteredDrinks }
                 </div>
                 <NavBar />

@@ -6,18 +6,20 @@ import { editDrink } from '../actions/actions'
 const DrinkItem = (props) => {
     console.log(props)
     return (
-      <div class="flip-card">
-        <div class="flip-card-inner">
-          <div class="flip-card-front">
-          <strong> Name:</strong> {props.drink.name}
+      <div className="drink-wrapper">
+        <div className="flip-card">
+          <div className="flip-card-inner">
+            <div className="flip-card-front">
+            <strong> Name:</strong> {props.drink.name}
+        </div>
+        <div class="flip-card-back">
+          <strong>Main Liquor:</strong> {props.drink.main_liquor}<br /><br/>
+          <strong>Ingredients:</strong> {props.drink.ingredients}<br /><br/>
+          <strong>Instructions:</strong> {props.drink.instructions}<br /><br/>
+        </div>
+        </div>
       </div>
-      <div class="flip-card-back">
-        <strong>Main Liquor:</strong> {props.drink.main_liquor}<br /><br/>
-        <strong>Ingredients:</strong> {props.drink.ingredients}<br /><br/>
-        <strong>Instructions:</strong> {props.drink.instructions}<br /><br/>
       </div>
-    </div>
-  </div>
     //   <div className="drink-name">
     //     <strong>Name:</strong> {props.drink.name}<br/><br/>
     //     <div className="drink-details">
