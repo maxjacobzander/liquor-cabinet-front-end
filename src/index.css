@@ -92,6 +92,10 @@ input[placeholder] {
     bottom: 0;
 }
 
+a {
+    color: #f1f1f1;
+}
+
 .collection-item {
     border: 2px solid black;
     padding: 3%;
