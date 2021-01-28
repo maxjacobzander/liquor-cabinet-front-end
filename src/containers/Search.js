@@ -31,7 +31,7 @@ class Search extends Component {
                     <h3>
                         <label>
                         What's in your cabinet?
-                        <input type="text" name="q" placeholder="Please Enter A Type Of Liquor (ie. Whiskey, Tequila, etc.)" onChange={this.handleChange} value={this.state.main_liquor}/>
+                        <input type="text" name="q" placeholder="Please Enter A Type Of Liquor To Feature (ie. Whiskey, Tequila, etc.)" onChange={this.handleChange} value={this.state.main_liquor}/>
                         </label>
                         <input type="submit" value="search" />
                     </h3>

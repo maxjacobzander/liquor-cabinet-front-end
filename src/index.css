@@ -54,7 +54,6 @@ input[type=text] {
     align-content: center;
     justify-content: center;
     position: relative;
-    font-size: medium;
     padding: 15px;
 }
 
@@ -197,7 +196,7 @@ button {
 
 .age-verification {
         font-family: 'Futura', sans-serif;
-        font-size: large;
+        /* font-size:  */
         display: inline-block;
     }
 
@@ -224,4 +223,5 @@ button {
       grid-template-columns: 1fr 1fr 1fr;
       grid-column-gap: 1px;
       margin: 10%;
+      justify-items: center;
   }

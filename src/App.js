@@ -3,22 +3,12 @@ import {connect} from 'react-redux';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 import Home from './containers/Home';
 import NewDrink from './containers/NewDrink';
-import Results from './components/Results';
 import Landing from './components/Landing';
 import Invalid from './components/Invalid';
 import Drinks from './containers/Drinks';
 import './index.css';
 
 class App extends Component {
-
-  constructor() {
-    super();
-
-    // this.state = {
-    //   id: 0,
-    //     drinks: []
-    // }
-  }
 
   render(){
     return (
