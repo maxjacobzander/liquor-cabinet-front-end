@@ -12,6 +12,7 @@ const Results = (props) => {
     }
     return props.drinks.map((drink) => {
       return(
+        <div className="drink-wrapper">
         <div className="flip-card">
           <div className="flip-card-inner">
              <div className="flip-card-front">
@@ -23,6 +24,7 @@ const Results = (props) => {
               <strong>Instructions:</strong> {drink.instructions}<br /><br/>
             </div>
           </div>
+        </div>
         </div>
       // <div>
       //   <h1> { drink.name } </h1>
