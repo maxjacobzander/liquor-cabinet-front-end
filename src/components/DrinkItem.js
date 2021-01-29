@@ -10,9 +10,9 @@ const DrinkItem = (props) => {
         <div className="flip-card">
           <div className="flip-card-inner">
             <div className="flip-card-front">
-            <strong> Name:</strong> {props.drink.name}
-        </div>
-        <div class="flip-card-back">
+              <strong> {props.drink.name} </strong>
+            </div>
+        <div className="flip-card-back">
           <strong>Main Liquor:</strong> {props.drink.main_liquor}<br /><br/>
           <strong>Ingredients:</strong> {props.drink.ingredients}<br /><br/>
           <strong>Instructions:</strong> {props.drink.instructions}<br /><br/>
