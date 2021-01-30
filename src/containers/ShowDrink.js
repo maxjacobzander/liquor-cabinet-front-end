@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import { connect } from 'react-redux';
 import { fetchDrinks } from '../actions/actions'
 
 class ShowDrink extends Component {
@@ -27,4 +28,4 @@ class ShowDrink extends Component {
     }
 }
 
-export default ShowDrink;
+export default connect(null, { fetchDrinks })(ShowDrink);
