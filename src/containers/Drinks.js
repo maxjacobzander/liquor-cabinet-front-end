@@ -32,9 +32,9 @@ export class Drinks extends Component {
             <div>
                 <LogoHeader />
                 <h2>Drinks</h2>
-                <h3>View All Drinks Here or Enter A Type of Liquor Below to Search</h3>
+                <h3>View All Drinks Here or Enter A Type of Liquor or an Ingredient Below to Search</h3>
                 <input type="text" id="allDrinkSearchBar"
-                    placeholder="Please Enter A Type Of Liquor To Feature (ie. Whiskey, Tequila, etc.)"
+                    placeholder="Please Enter An Ingredient Or A Type Of Liquor To Feature (ie. Whiskey, Tequila, etc.)"
                     value={this.state.search}
                     onChange={this.updateSearch.bind(this)} />
                 <br /> <br />
