@@ -8,6 +8,8 @@ export default (state = [], action) => {
             return [...state, action.payload]
         case "EDIT_DRINK":
             // Add EDIT functionality if it feels right
+        // case "CLEAR_DRINK":
+        //     return state
         default:
             return state
     }

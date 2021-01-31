@@ -1,12 +1,12 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import { connect } from 'react-redux';
 import { Link } from 'react-router-dom'
 
 const Results = (props) => {
 
-  // componentDidMount() {
-  //   this.setState = ""
-  // }
+  // useEffect(() => {
+  //   props.clearDrinks()
+  // })
 
     if (props.drinks.length < 1){
     return null;
