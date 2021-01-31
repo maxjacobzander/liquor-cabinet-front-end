@@ -1,15 +1,25 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
 import { searchDrinks } from '../actions/actions'
+import Results from '../components/Results'
 
 class Search extends Component {
 
     constructor(props) {
         super(props);
         this.state = {
-            main_liquor: ''
+            main_liquor: '',
+            showResults: false
         }
-    }
+        this.handleToggleClick = this.handleToggleClick.bind(this);
+      }
+    
+      handleToggleClick() {
+        this.setState(state => ({
+          showResults: true
+        }));
+      }
+    
 
     handleChange = event => {
 		this.setState({
@@ -20,6 +30,7 @@ class Search extends Component {
     handleSubmit = event => {
         event.preventDefault()
         this.props.searchDrinks(this.state.main_liquor);
+        this.handleToggleClick()
     }
     
     
@@ -36,6 +47,9 @@ class Search extends Component {
                         <input type="submit" value="search" />
                     </h3>
                 </form>
+                <div className="drink-wrapper">
+                <Results result={this.state.showResults}/>
+                </div>
             </div>
         );
     }

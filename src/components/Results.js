@@ -11,6 +11,9 @@ const Results = (props) => {
     if (props.drinks.length < 1){
     return null;
     }
+    if (!props.result) {
+      return null;
+    }
     return props.drinks.map((drink) => {
       return(
         <div className="drink-wrapper">

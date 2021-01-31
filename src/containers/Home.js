@@ -4,16 +4,16 @@ import Logo from '../images/logoText.png';
 import Search from './Search';
 import Results from '../components/Results';
 class Home extends Component {
-    
+
     render() {
         return (
             <div>
                 <h2>Welcome to</h2>
                 <img className="logo" src={Logo} alt="The Liquor Cabinet" />
                 <Search />
-                <div className="drink-wrapper">
+                {/* <div className="drink-wrapper">
                 <Results />
-                </div>
+                </div> */}
                 <NavBar />
             </div>
             
