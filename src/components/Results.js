@@ -1,5 +1,6 @@
 import React from 'react'
 import { connect } from 'react-redux';
+import { Link } from 'react-router-dom'
 
 const Results = (props) => {
 
@@ -22,6 +23,7 @@ const Results = (props) => {
               <strong>Main Liquor:</strong> {drink.main_liquor}<br /><br/>
               <strong>Ingredients:</strong> {drink.ingredients}<br /><br/>
               <strong>Instructions:</strong> {drink.instructions}<br /><br/>
+              <Link to={`/drink/${drink.id}`} ><strong>View This Drink</strong></Link>
             </div>
           </div>
         </div>
