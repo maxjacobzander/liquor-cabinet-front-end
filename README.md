@@ -2,7 +2,6 @@
 
 Front-End Code (Back-End Code available [here](https://github.com/maxjacobzander/liquor-cabinet-back-end))
 ## What's Is Liquor Cabinet?
-
 Liquor Cabinet is a single-page web application with a React/Redux front-end and a Rails API backend. Users can search a type of liquor that they have in their posession and the app with return cocktail recipes that the user can make featuring that liquor.
 
 ### User Guide
