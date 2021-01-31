@@ -71,7 +71,3 @@ export const searchDrinks = liquor => {
         })
     }
 }
-
-// export const clearDrinks = () => {
-//     return
-// }

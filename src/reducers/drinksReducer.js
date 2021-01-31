@@ -6,10 +6,6 @@ export default (state = [], action) => {
             return [...action.payload]
         case "ADD_DRINK":
             return [...state, action.payload]
-        case "EDIT_DRINK":
-            // Add EDIT functionality if it feels right
-        // case "CLEAR_DRINK":
-        //     return state
         default:
             return state
     }
