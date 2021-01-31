@@ -54,7 +54,9 @@ input[type=text] {
     align-content: center;
     justify-content: center;
     position: relative;
+    font-size: medium;
     padding: 15px;
+    background-color: #f1f1f1;
 }
 
 label {
@@ -94,6 +96,9 @@ input[placeholder] {
 
 a {
     color: #f1f1f1;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
 }
 
 .collection-item {
@@ -243,5 +248,9 @@ button {
 
 
   .container {
-      text-align: center;
+      /* text-align: center; */
+  }
+
+  .show-drink {
+      margin: 4rem;
   }
