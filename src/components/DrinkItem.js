@@ -5,26 +5,28 @@ import { editDrink } from '../actions/actions'
 import { Link } from 'react-router-dom';
 
 const DrinkItem = (props) => {
-  
-  const { name, main_liquor, ingredients, instructions, id} = props.drink
-  
-    console.log(props)
-    return (
-      <div className="drink-wrapper">
-        <div className="flip-card">
-          <div className="flip-card-inner">
-            <div className="flip-card-front">
-              <strong> {name} </strong>
+
+  const { name, main_liquor, ingredients, instructions, id } = props.drink
+
+  console.log(props)
+  return (
+    <div className="drink-wrapper">
+      <div className="flip-card">
+        <div className="flip-card-inner">
+          <div className="flip-card-front">
+            <strong> {name} </strong>
+          </div>
+          <div className="flip-card-back" style={instructions?.length < 180 ? { display: "flex" } : {}}>
+            <div style={{ padding: "1em" }}>
+              <strong>Main Liquor:</strong> {main_liquor}<br /><br />
+              <strong>Ingredients:</strong> {ingredients}<br /><br />
+              <strong>Instructions:</strong> {instructions}<br /><br />
+              <Link to={`/drink/${id}`} ><strong>View This Drink</strong></Link>
             </div>
-        <div className="flip-card-back">
-          <strong>Main Liquor:</strong> {main_liquor}<br /><br/>
-          <strong>Ingredients:</strong> {ingredients}<br /><br/>
-          <strong>Instructions:</strong> {instructions}<br /><br/>
-          <Link to={`/drink/${id}`} ><strong>View This Drink</strong></Link>
-        </div>
+          </div>
         </div>
       </div>
-      </div>
+    </div>
     //   <div className="drink-name">
     //     <strong>Name:</strong> {props.drink.name}<br/><br/>
     //     <div className="drink-details">

@@ -28,6 +28,8 @@ class NewDrink extends Component {
     handleSubmit = event => {
         event.preventDefault();
         this.props.addDrink( this.state );
+        console.log(this.state, "state")
+        console.log(this.props, "props")
         this.props.history.push('/drinks');
     }
 
@@ -37,7 +39,7 @@ class NewDrink extends Component {
             <LogoHeader />
             <form id="new-drink" onSubmit={ this.handleSubmit }>
                 <h2>Add A New Drink To Our Database</h2>
-                <div classname="new-drink-input">
+                <div className="new-drink-input">
                     <label>
                     Name: 
                     <input type="text" name="name" id="name" value={ this.state.name } onChange={ this.handleChange } />
