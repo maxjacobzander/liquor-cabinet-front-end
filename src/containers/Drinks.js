@@ -9,16 +9,57 @@ export class Drinks extends Component {
     constructor() {
         super();
         this.state = {
-            search: ''
+            search: '',
+            sorted: false
         }
     }
 
-    updateSearch(event){
-        this.setState({search: event.target.value})
+    updateSearch(event) {
+        this.setState({ search: event.target.value })
     }
 
-    componentDidMount(){
+    componentDidMount() {
         this.props.fetchDrinks()
+    }
+
+    sortDrinks = () => {
+        const drinks = this.props.drinks
+        if (this.state.sorted === false) {
+            this.setState({
+                drinks: drinks.sort(function (a, b) {
+                    let nameA = a.name;
+                    let nameB = b.name;
+                    if (nameA < nameB) {
+                        return 1;
+                    }
+                    if (nameA > nameB) {
+                        return -1;
+                    }
+                    return 0;
+                })       
+            })
+            this.setState({
+                sorted: true
+            })
+        }
+        else {
+            this.setState({
+                drinks: drinks.sort(function (a,b) {
+                    let idA = a.id;
+                    let idB = b.id;
+                    if (idA < idB) {
+                        return -1;
+                    }
+                    if (idB > idA) {
+                        return 1;
+                    }
+                    return 0;
+                })
+            })
+            this.setState({
+                sorted: false
+            })
+        }
     }
 
     render() {
@@ -28,7 +69,7 @@ export class Drinks extends Component {
                 return drink.ingredients?.toLowerCase().indexOf(this.state.search) !== -1 || drink.main_liquor.indexOf(this.state.search) !== -1
             }
         );
-        let filteredDrinks = drinks.map(( drink, i ) => <DrinkItem key={i} drink={drink} />)
+        let filteredDrinks = drinks.map((drink, i) => <DrinkItem key={i} drink={drink} />)
         return (
             <div>
                 <LogoHeader />
@@ -39,8 +80,9 @@ export class Drinks extends Component {
                     value={this.state.search}
                     onChange={this.updateSearch.bind(this)} />
                 <br /> <br />
+                <button className="sort-button" onClick={this.sortDrinks}>Sort Z-A</button>
                 <div className="drink-wrapper">
-                        { filteredDrinks }
+                    {filteredDrinks}
                 </div>
                 <NavBar />
             </div>
