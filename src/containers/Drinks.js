@@ -50,7 +50,7 @@ export class Drinks extends Component {
                     if (idA < idB) {
                         return -1;
                     }
-                    if (idB > idA) {
+                    if (idA > idB) {
                         return 1;
                     }
                     return 0;
