@@ -80,7 +80,7 @@ export class Drinks extends Component {
                     value={this.state.search}
                     onChange={this.updateSearch.bind(this)} />
                 <br /> <br />
-                <button className="sort-button" onClick={this.sortDrinks}>Sort Z-A</button>
+                {/* <button className="sort-button" onClick={this.sortDrinks}>Sort Z-A</button> */}
                 <div className="drink-wrapper">
                     {filteredDrinks}
                 </div>
