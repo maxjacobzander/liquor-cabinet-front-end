@@ -55,8 +55,17 @@ input[type=text] {
     justify-content: center;
     position: relative;
     font-size: medium;
-    padding: 2rem;
     background-color: #f1f1f1;
+    padding: 8px 10%;
+}
+
+.new-drink-input{
+    width: 100%;
+}
+
+.new-drink-input input[type=text]{
+    margin-left: 10px;
+    width: 100%;
 }
 
 label {
@@ -266,11 +275,6 @@ button {
       left: 50%;
       -ms-transform: translate(-50%, -50%);
       transform: translate(-50%, -50%);
-  }
-
-
-  .container {
-      /* text-align: center; */
   }
 
   .show-drink {
