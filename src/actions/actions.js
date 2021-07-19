@@ -1,6 +1,6 @@
 export const fetchDrinks = () => {
     return(dispatch) => {
-        return fetch(`http://localhost:3001/api/v1/drinks`)
+        return fetch(`https://zander-liquor-cabinet.herokuapp.com/api/v1/drinks`)
         .then(resp => resp.json())
         // .then(data => console.log)
         .then(drinks => {
@@ -12,7 +12,7 @@ export const fetchDrinks = () => {
 
 export const addDrink = drink => {
     return(dispatch) => {
-        return fetch('http://localhost:3001/api/v1/drinks', {
+        return fetch('https://zander-liquor-cabinet.herokuapp.com/api/v1/drinks', {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json'
@@ -28,7 +28,7 @@ export const addDrink = drink => {
 
 export const editDrink = drinkID => {
     return(dispatch) => {
-        return fetch(`http://localhost:3001/api/v1/drinks/${drinkID}`, {
+        return fetch(`https://zander-liquor-cabinet.herokuapp.com/api/v1/drinks/${drinkID}`, {
             method: 'PATCH',
             headers: {
                 'Content-Type': 'application/json'
@@ -44,7 +44,7 @@ export const editDrink = drinkID => {
 
 export const fetchDrinkForEdit = drinkID => {
     return(dispatch) => {
-        return fetch(`http://localhost:3001/api/v1/drinks/${drinkID}`)
+        return fetch(`https://zander-liquor-cabinet.herokuapp.com/api/v1/drinks/${drinkID}`)
         .then(resp => resp.json())
         .then(data => console.log)
         // .then(drinks => {
@@ -57,7 +57,7 @@ export const searchDrinks = liquor => {
 
     return(dispatch) => {
         // debugger
-        return fetch(`http://localhost:3001/api/v1/search?q=${liquor}`, {
+        return fetch(`https://zander-liquor-cabinet.herokuapp.com/api/v1/search?q=${liquor}`, {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json'
