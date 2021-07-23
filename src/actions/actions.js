@@ -57,7 +57,7 @@ export const searchDrinks = liquor => {
 
     return(dispatch) => {
         // debugger
-        return fetch(`https://zander-liquor-cabinet.herokuapp.com/api/v1/search?q=${liquor}`, {
+        return fetch(`https://zander-liquor-cabinet.herokuapp.com/api/v1/search?q=${liquor.charAt(0).toUpperCase() + liquor.slice(1)}`, {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json'
